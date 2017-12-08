@@ -17,7 +17,9 @@ import { HeroService }          from './hero.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { FilmsComponent } from './films/films.component';
- 
+import { FilmDetailComponent} from './film-detail/film-detail.component';
+import { FilmService } from './film.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -39,9 +41,10 @@ import { FilmsComponent } from './films/films.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    FilmsComponent
+    FilmsComponent,
+    FilmDetailComponent
   ],
-  providers: [ HeroService, MessageService ],
+  providers: [ HeroService, MessageService, FilmService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
  
 import { Film }         from '../film';
-
 import { FilmService } from '../film.service';
  
 @Component({
