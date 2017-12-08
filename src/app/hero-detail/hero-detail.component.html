@@ -1,0 +1,37 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>Real name:
+      <input [(ngModel)]="hero.realname" placeholder="realname"/>
+    </label>
+  </div>
+  <div>
+    <label>First Appearance:
+      <input [(ngModel)]="hero.firstappearance" placeholder="fristappearance"/>
+    </label>
+  </div>
+  <div>
+    <label>Movie Appearances:
+      <input [(ngModel)]="hero.movieappearances" placeholder="movieappearances"/>
+    </label>
+  </div>
+  <div>
+    <label>Info:
+      <input [(ngModel)]="hero.info" placeholder="info"/>
+    </label>
+  </div>
+  <div>
+    <label>Played By:
+      <input [(ngModel)]="hero.playedby" placeholder="playedby"/>
+    </label>
+  </div>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
