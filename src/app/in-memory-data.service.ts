@@ -24,6 +24,14 @@ export class InMemoryDataService implements InMemoryDbService {
      { id: 22, name: 'Groot' ,realname:'Groot',firstappearance:'Guardians of the Galaxy',movieappearances:'',playedby:'',info:'' },
      { id: 22, name: 'Mantis' ,realname:'Mantis',firstappearance:'Guardians of the Galaxy vol.2',movieappearances:'',playedby:'',info:'' },
    ];
-   return {heroes};
+   const films = [
+    { id: 10, name:'Iron Man',director:'',released:'',actorsin:'',filminfo:''},
+    { id: 10, name:'The Incredible Hulk',director:'',released:'',actorsin:'',filminfo:''},
+    { id: 10, name:'Iron Man 2',director:'',released:'',actorsin:'',filminfo:''},
+    { id: 10, name:'Captain America: The First Avenger',director:'',released:'',actorsin:'',filminfo:''},
+    { id: 10, name:'Thor',director:'',released:'',actorsin:'',filminfo:''},
+    { id: 10, name:'The Avengers',director:'',released:'',actorsin:'',filminfo:''}
+   ];
+   return {heroes,films};
  }
 }
